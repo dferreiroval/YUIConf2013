@@ -10,3 +10,12 @@
 .bottom-us {
     
 }
+
+.drunk {
+    background: url(../../images/diego-drunk.jpg) #333 center no-repeat;
+    opacity: .5;
+}
+
+.pino-intro li {
+    margin: 20px 0;
+}
