@@ -61,7 +61,7 @@ URL: https://code.google.com/p/io-2012-slides
           Norbert Hu
           <ul>
               <li>Microsoft Alumni</li>
-              <li>Backend and Performance engineer at FourSquare</li>
+              <li>Backend and performance engineer at Foursquare</li>
               <li>Wine lover</li>
           </ul>
           </div>
@@ -134,67 +134,56 @@ URL: https://code.google.com/p/io-2012-slides
   <slide class="segue dark nobackground">
     <aside class="gdbar"><img src="images/yui-mini.png"></aside>
     <hgroup class="auto-fadein">
-      <h2>Choosing the plaftform</h2>
+      <h2>Choosing the Technology</h2>
       <h3>Blue pill or red pill?</h3>
     </hgroup>
   </slide>
 
   <slide class="pino-intro">
     <hgroup>
-      <h2>Why HTML5</h2>
+      <h2>Requirements</h2>
     </hgroup>
     <article>
       <ul>
         <li>
-          Foo
-          <ul>
-              <li>Bar</li>
-              <li>Bar2</li>
-          </ul>
+          Uniform app experience 
+          <!-- implementing multiple copies of the exact same app across different environments is hard -->
         </li>
         <li>
-          Buzz
+          Single code base
+          <!-- do not need to start from scratch for every platform -->
         </li>
-
-        <li>Be able to access from as many devices as possible</li>
-
-        <li>Has to be fast
-          <ul>
-              <li>One page app</li>
-              <li>#perfmatters</li>
-          </ul>
+        <li>
+          Barrier of entry
+          <!-- familiarity on HTML/JS/CSS, dev cost -->
         </li>
-
       </ul>
+      <!-- W3C candidate recommendation in Dec 2012 -->
+      <!-- W3C recommendation by July 2014 -->
+      <!-- CSS3 selectors, offline app cache, canvas, local/session storage, geo-location, 2D animations, camera -->
     </article>
   </slide>
 
   <slide class="pino-intro">
     <hgroup>
-      <h2>An hybrid solution</h2>
+      <h2>A Hybrid Solution</h2>
     </hgroup>
     <article>
       <ul>
         <li>
-          Foo
-          <ul>
-              <li>Bar</li>
-              <li>Bar2</li>
-          </ul>
+          Native app is still more appealing to users
+          <!-- being able to install... -->
         </li>
         <li>
-          Buzz
+          Adobe PhoneGap & PhoneGap Build
+          <!-- open source project maintained by Adobe -->
+          <!-- web container bundling HTML/JS/CSS... -->
+          <!-- app submission to App Store and Google Play... -->
         </li>
-
-        <li>Be able to access from as many devices as possible</li>
-
-        <li>Has to be fast
-          <ul>
-              <li>One page app</li>
-              <li>#perfmatters</li>
-          </ul>
+        <li>
+          PhoneGap plugins
+          <!-- if you really need to interact with the native platform directly... -->
         </li>
-
       </ul>
     </article>
   </slide>
@@ -215,37 +204,38 @@ URL: https://code.google.com/p/io-2012-slides
     <aside class="gdbar"><img src="images/yui-mini.png"></aside>
     <hgroup class="auto-fadein">
       <h2>And more blocks...</h2>
-      <h3>Server side</h3>
+      <h3>Server Side</h3>
     </hgroup>
   </slide>
 
   <slide class="pino-intro">
     <hgroup>
-      <h2>Server requirements</h2>
+      <h2>Server Requirements</h2>
     </hgroup>
     <article>
       <ul>
         <li>
-          Foo
-          <ul>
-              <li>Bar</li>
-              <li>Bar2</li>
-          </ul>
+          Mapping objects to models
+          <!-- heavily data driven -->
         </li>
         <li>
-          Buzz
+          RESTful API
         </li>
-
-        <li>Be able to access from as many devices as possible</li>
-
-        <li>Has to be fast
-          <ul>
-              <li>One page app</li>
-              <li>#perfmatters</li>
-          </ul>
+        <li>
+          Image processing
+          <!-- storage, manipulation, resizing -->
         </li>
-
+        <li>
+          Perf & Scale
+          <!-- dynamically adjust processing power during peak hours -->
+          <!-- CDN: network traffic throughput and latency -->
+        </li>
+        <li>
+          Maintanence cost
+          <!-- patching software, health monitoring -->
+        </li>
       </ul>
+      <!-- main offerings: Amazon AWS, Windows Azure, Google AppEngine -->
     </article>
   </slide>
 
@@ -256,25 +246,14 @@ URL: https://code.google.com/p/io-2012-slides
     <article>
       <ul>
         <li>
-          Foo
+          AppEngine
           <ul>
-              <li>Bar</li>
-              <li>Bar2</li>
+              <li>Datastore</li>
+              <li>Memcache</li>
+              <li>Image Service</li>
+              <li>Auto-scaling</li>
           </ul>
         </li>
-        <li>
-          Buzz
-        </li>
-
-        <li>Be able to access from as many devices as possible</li>
-
-        <li>Has to be fast
-          <ul>
-              <li>One page app</li>
-              <li>#perfmatters</li>
-          </ul>
-        </li>
-
       </ul>
     </article>
   </slide>
@@ -320,7 +299,7 @@ URL: https://code.google.com/p/io-2012-slides
   <slide class="segue dark nobackground">
     <aside class="gdbar"><img src="images/yui-mini.png"></aside>
     <hgroup class="auto-fadein">
-      <h2>Pitch to Zoom Pan move</h2>
+      <h2>Pitch-Zoom & Pan-Move</h2>
       <h3>Subtitle</h3>
     </hgroup>
   </slide>

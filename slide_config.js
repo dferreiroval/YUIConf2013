@@ -19,7 +19,7 @@ var SLIDE_CONFIG = {
   // Author information
   presenters: [{
     name: 'Diego Ferreiro Val',
-    company: 'Senior engineer, Salesforce.com',
+    company: 'Senior Engineer, Salesforce.com',
     gplus: 'https://plus.google.com/113258459442234917952',
     twitter: '@diervo',
     www: 'http://www.feval.info',
@@ -28,9 +28,8 @@ var SLIDE_CONFIG = {
     name: 'Norbert Hu',
     company: 'Senior Engineer, Foursquare',
     gplus: 'http://plus.google.com/1234567890',
-    twitter: '@yourhandle',
-    www: 'http://www.you.com',
-    github: 'http://github.com/you'
+    twitter: '@norberthu',
+    github: 'http://github.com/norberthu'
   }]
 };
 
