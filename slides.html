@@ -237,42 +237,11 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide class="pino-intro">
     <hgroup>
-      <h2>Server Requirements</h2>
-    </hgroup>
-    <article>
-      <ul>
-        <li>
-          Mapping objects to models
-          <!-- heavily data driven -->
-        </li>
-        <li>
-          RESTful API
-        </li>
-        <li>
-          Image processing
-          <!-- storage, manipulation, resizing -->
-        </li>
-        <li>
-          Perf & Scale
-          <!-- dynamically adjust processing power during peak hours -->
-          <!-- CDN: network traffic throughput and latency -->
-        </li>
-        <li>
-          Maintanence cost
-          <!-- patching software, health monitoring -->
-        </li>
-      </ul>
-      <img src="http://techfact.org/wp-content/uploads/2012/06/Public-Cloud.jpg"/>
-      <!-- main offerings: Amazon AWS, Windows Azure, Google AppEngine -->
-    </article>
-  </slide>
-
-  <slide class="pino-intro">
-    <hgroup>
       <h2>Server Architecture</h2>
     </hgroup>
     <article>
-      <img src="http://i1-news.softpedia-static.com/images/news-700/A-Cascading-Router-Failure-Caused-the-Massive-Google-App-Engine-Outage-that-Took-Down-Dropobox-Tumblr.jpg?1351326980"/>
+      <img style="position:absolute;bottom:100px;left:0"
+      src="http://i1-news.softpedia-static.com/images/news-700/A-Cascading-Router-Failure-Caused-the-Massive-Google-App-Engine-Outage-that-Took-Down-Dropobox-Tumblr.jpg?1351326980"/>
       <ul>
           <li>Datastore</li>
           <li>Blobstore</li>
@@ -295,13 +264,14 @@ URL: https://code.google.com/p/io-2012-slides
     <hgroup>
       <h2>Rendering performance (I): The ugly</h2>
     </hgroup>
+
+  <article class="build smaller">
     <ul>
       <li>
         YAF Built in transitions
       </li>
     </ul>
-
-    <pre class="prettyprint" data-lang="CSS">
+    <pre style="width: 660px" class="prettyprint" data-lang="CSS">
       .yui3-app-transitioning .yui3-app-views > *,
       .yui3-app-views.yui3-app-transitioning > * {
         <b>display: inline-block;</b>
@@ -316,12 +286,22 @@ URL: https://code.google.com/p/io-2012-slides
         box-sizing: border-box;
       }
     </pre>
-    <footer>
-      http://wilsonpage.co.uk/introducing-layout-boundaries/
+    
+    <iframe class="app" src="http://pinobuzz.com/app"></iframe>
+
+    <footer style="font-size:22px">
+      <p>- Changing <b class="yellow">display</b> will change the <b class="red">layout boundaries</b></p>
+      <p>- We needed to <b class="green">refactor the transitions</b></p>
+      <br>
+      <p>http://wilsonpage.co.uk/introducing-layout-boundaries/</p>
     </footer>
+    </article>
+    
     
   </slide>
-   <slide class="pino-intro">
+
+  </slide>
+   <slide class="pino-intro" >
       <h2>Rendering performance (II): The bad</h2>
     <article>
     <ul>
@@ -333,13 +313,25 @@ URL: https://code.google.com/p/io-2012-slides
         </ul>
       </li>
       <li>
-        In native we run in a sandbox (within a webView)
+        We need to handoff as much work as possible to the GPU
         <ul>
-          <li>Every operation has an overhead</li>
-          <li>Bad layering or expensive paints can easily cause jank or flickering</li>
+          <li>Too many GPU layers will saturate the bus (flicker)</li>
+          <li>Too big layers will cause jank</li>
         </ul>
       </li>
     </ul>
+    <div style="overflow:hidden; width: 100%; height: 200px">
+      <img src="images/timeline.png">
+    </div>
+  </article>
+
+  </slide>
+
+  <slide class="pino-intro" >
+      <h2>Rendering performance (II): The bad</h2>
+      <h3>translate3d() all things! GPU to the rescue?</h3>
+
+  <article>
   </article>
 
   </slide>

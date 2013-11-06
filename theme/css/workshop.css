@@ -24,3 +24,11 @@
 .pino-intro li {
     margin: 20px 0;
 }
+
+.app {
+    position: absolute;
+    top: 110px;
+    right: 50px;
+    width: 340px;
+    height: 532px;
+}
