@@ -133,11 +133,10 @@ URL: https://code.google.com/p/io-2012-slides
     </article>
   </slide>
 
-  <slide class="segue nobackground" style="background:url(http://www.psychalive.org/wp-content/uploads/2012/09/Red-Pill-Blue-Pill.jpg)">
+  <slide class="segue nobackground">
     <aside class="gdbar"><img src="images/yui-mini.png"></aside>
     <hgroup  class="auto-fadein">
       <h2 style="color:black">Choosing the Technology</h2>
-      <h3 style="color:black">Blue pill or red pill?</h3>
     </hgroup>
   </slide>
 
@@ -147,11 +146,11 @@ URL: https://code.google.com/p/io-2012-slides
     </hgroup>
     <article>
       <div  class="build container">
-        <div style="width: 200px;display:inline-block"><img src="http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2013/1/11/1357921737290/Masterclass-in-HTML5-and--006.jpg"/></div>
+        <div><img style="max-width:400px" src="http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2013/1/11/1357921737290/Masterclass-in-HTML5-and--006.jpg"/></div>
         <!-- W3C candidate recommendation in Dec 2012 -->
         <!-- W3C recommendation by July 2014 -->
         <!-- CSS3 selectors, offline app cache, canvas, local/session storage, geo-location, 2D animations, camera -->
-        <div style="width: 50%;display:inline-block; margin-left:250px">
+        <div style="text-align: right">
           <img style="max-width:500px" src="http://static.ragamuffinsoul.com/wp-content/uploads/2013/06/certificat-app-store-google-play.png"/>
         </div>
         <!-- installable app with a market place for users to discover -->
@@ -159,20 +158,13 @@ URL: https://code.google.com/p/io-2012-slides
     </article>
   </slide>
 
-  <slide class="segue dark nobackground">
-    <aside class="gdbar"><img src="images/yui-mini.png"></aside>
-    <hgroup class="auto-fadein">
-      <h2>A Hybrid Solution</h2>
-    </hgroup>
-    <img  style="position:absolute; bottom:0; right:0"src="http://www.contentreich.de/wp-content/uploads/2013/01/3077556441_83d4770066_blog.jpg"/>
-  </slide>
-
-  <slide class="pino-intro" style="background: url(http://www.metaltoad.com/sites/default/files/phonegap.png) center no-repeat; ">
+  <slide class="pino-intro" style="background: url() center no-repeat; ">
     <hgroup>
-      <!-- <h2>PhoneGap Build</h2> -->
+      <h2>Hybrid Approach</h2>
+      <h3>PhoneGap Build</h3>
     </hgroup>
     <article>
-      <img src=""/>
+      <img style="position: absolute; top: 75px; left: 250px; max-width:750px" src="http://www.metaltoad.com/sites/default/files/phonegap.png"/>
       <!-- open source project maintained by Adobe -->
       <!-- web container bundling HTML/JS/CSS... -->
       <!-- app submission to App Store and Google Play... -->
@@ -230,23 +222,21 @@ URL: https://code.google.com/p/io-2012-slides
   <slide class="segue dark nobackground">
     <aside class="gdbar"><img src="images/yui-mini.png"></aside>
     <hgroup class="auto-fadein">
-      <h2>And more blocks...</h2>
-      <h3>Server Side</h3>
+      <h2>What about the Server?</h2>
     </hgroup>
   </slide>
 
   <slide class="pino-intro">
     <hgroup>
-      <h2>Server Architecture</h2>
+      <h2>Google AppEngine</h2>
     </hgroup>
     <article>
-      <img style="position:absolute;bottom:100px;left:0"
-      src="http://i1-news.softpedia-static.com/images/news-700/A-Cascading-Router-Failure-Caused-the-Massive-Google-App-Engine-Outage-that-Took-Down-Dropobox-Tumblr.jpg?1351326980"/>
+      <img style="position:absolute;bottom:75px;left:500px" src="http://i.imgur.com/9N2DNQn.png"/>
       <ul>
           <li>Datastore</li>
           <li>Blobstore</li>
           <li>Memcache</li>
-          <li>Image Service</li>
+          <li>Image Service / CDN</li>
           <li>Auto-scaling Instances</li>
       </ul>
     </article>
@@ -372,6 +362,9 @@ URL: https://code.google.com/p/io-2012-slides
           Draw photo onto canvas
         </li>
         <li>
+          User manipulates image on canvas
+        </li>
+        <li>
           Convert canvas into blob
         </li>
         <li>
@@ -384,10 +377,15 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide class="pino-intro">
     <hgroup>
-      <h2>Pinch-Zoom & Pan-Move</h2>
+      <h2>Image Manipulation</h2>
+      <h3>Pinch-Zoom & Pan-Move</h3>
     </hgroup>
     <article>
-      <img src="http://upload.wikimedia.org/wikipedia/commons/c/cc/Pinch_zoom.png"/>
+      <div class="build">
+        <img src="http://upload.wikimedia.org/wikipedia/commons/c/cc/Pinch_zoom.png"/>
+        <img src="http://upload.wikimedia.org/wikipedia/commons/c/cc/Pinch_zoom.png"/>
+        <img src="http://upload.wikimedia.org/wikipedia/commons/c/cc/Pinch_zoom.png"/>
+      </div>
     </article>
   </slide>
 
